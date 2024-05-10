@@ -1,37 +1,36 @@
 import java.util.*;
 public class StudentGradeCalculator {
     public static void main(String[] args) {
-        int a,b,c,d;
-        char grade;
+        char GradeOfStudent;
         System.out.println("Enter subject marks:");
         Scanner sc = new Scanner(System.in);
         System.out.println("Sub1: ");
-        a=sc.nextInt();
+        int x=sc.nextInt();
         System.out.println("Sub2: ");
-        b=sc.nextInt();
+        int y=sc.nextInt();
         System.out.println("Sub3: ");
-        c=sc.nextInt();
+        int z=sc.nextInt();
         System.out.println("Sub4: ");
-        d=sc.nextInt();
-        int TotalMarks = a+b+c+d;
+        int q=sc.nextInt();
+        int TotalMarks = x+y+z+q;
         int AvgPersent = TotalMarks/4;
         if(AvgPersent>=90){
-            grade ='A';
+            GradeOfStudent ='A';
         }else if(AvgPersent>=80){
-            grade='B';
+            GradeOfStudent='B';
         }else if(AvgPersent>=70){
-            grade='C';
+            GradeOfStudent='C';
         }else if(AvgPersent>=60){
-            grade='D';
+            GradeOfStudent='D';
         }else if(AvgPersent>=50){
-            grade='E';
+            GradeOfStudent='E';
         }else{
-            grade='F';
+            GradeOfStudent='F';
         }
 
         System.out.println("Total mark of the student is: "+TotalMarks);
         System.out.println("Average persentage of student is: "+AvgPersent);
-        System.out.println("Grade of the Student is: "+grade);
+        System.out.println("Grade of the Student is: "+GradeOfStudent);
         //System.out.println(a+b+c+d);
     }
 }
